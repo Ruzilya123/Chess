@@ -1,0 +1,161 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background: #f8f9fa;
+}
+
+.game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 40px;
+}
+
+.board {
+  width: calc(64px * 8);
+  height: calc(64px * 8);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cell {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.2s;
+}
+
+.cell img {
+  width: 48px;
+  height: 48px;
+  position: relative;
+}
+
+.black {
+  background-color: #769656;
+}
+
+.white {
+  background-color: wheat;
+}
+
+.selected {
+  background-color: brown;
+}
+
+.available {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background-color: #22c022;
+}
+
+.lost {
+  height: calc(50vh - 60px);
+  padding: 30px;
+  margin-left: 50px;
+  background-color: lightgray;
+}
+
+.starting {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  height: min-content;
+  max-width: 600px;
+  gap: 10px;
+  padding: 20px;
+  margin: 40px 0;
+  border-radius: 20px;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.2);
+  background-color: white;
+}
+
+.starting-inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.starting-inputs input {
+  padding: 8px 10px;
+  width: 170px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.starting-inputs input:focus {
+  border-color: blue;
+  outline: none;
+}
+
+.logo, .home {
+  height: 40px;
+  cursor: pointer;
+}
+
+.starting select, .starting-inputs input, .starting-inputs label {
+  font-size: 16px;
+}
+
+.starting select {
+  padding: 8px 10px;
+  width: 180px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.starting-inputs label {
+  margin-top: 10px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.timer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 24px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  width: calc(64px * 8);
+  height: calc(64px * 8);
+  border: 1px solid #444;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+}

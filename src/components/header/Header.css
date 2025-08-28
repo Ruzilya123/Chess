@@ -1,0 +1,25 @@
+/* Header.css */
+
+header {
+    width: 100%;
+    padding: 12px 24px;
+    background-color: #343a40;
+}
+
+header .awd {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+/* логотип и “домой” */
+.logo, .home {
+    height: 40px;
+    cursor: pointer;
+}
+.home {
+    /* если нужно отодвинуть вправо */
+    margin-left: auto;
+}

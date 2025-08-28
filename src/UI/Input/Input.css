@@ -1,0 +1,52 @@
+/* Input.css */
+
+/* контейнер */
+.input {
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+}
+
+.label {
+    margin-right: 8px;
+    font-weight: 500;
+    width: 160px;
+}
+
+/* общий input */
+.input input {
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+    transition: border-color 0.2s;
+}
+.input input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* чекбокс */
+.input input[type="checkbox"] {
+    /* чуть больший размер и кастомный цвет у современных браузеров */
+    width: 18px;
+    height: 18px;
+    accent-color: #007bff;
+}
+
+.input select {
+    padding: 8px 10px;
+    width: 170px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+.input select:focus {
+    border-color: blue;
+    outline: none;
+}
+
